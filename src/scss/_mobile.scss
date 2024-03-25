@@ -17,12 +17,22 @@
          padding: 24px 0;
       }
    }
+   .promo {
+      &__illustration {
+         width: 60%;
+         &-img {
+            height: auto;
+            max-width: 640px;
+            width: 100%;
+            object-fit: contain;
+         }
+      }
+   }
 }
 
 @media (max-width: 1240px) {
    .header {
       &__nav-list {
-         // width: 550px;
          width: 64%;
       }
       &__nav-link,
@@ -46,6 +56,35 @@
          width: 30px;
          border-radius: 4px;
          border: 2px solid $black;
+      }
+   }
+   h1 {
+      font-size: 42px;
+   }
+   .promo {
+      &__content {
+         max-width: 430px;
+         gap: 10px;
+      }
+      &__wrapper {
+         padding: 40px;
+      }
+      &__subheading {
+         font-size: 20px;
+      }
+      &__button {
+         position: relative;
+         background-color: $white;
+         z-index: 2;
+         padding: 22px;
+         display: flex;
+         top: -8px;
+         left: 10px;
+         transition: 0.3s ease-in-out;
+         &-container {
+            position: relative;
+            margin-top: 30px;
+         }
       }
    }
 }
@@ -109,5 +148,189 @@
       border-radius: 6px;
       border: 2px solid $black;
       background-color: $white;
+   }
+   h1 {
+      font-size: 36px;
+   }
+   .promo {
+      &__content {
+         max-width: 370px;
+      }
+      &__subheading {
+         font-size: 18px;
+      }
+      &__button {
+         position: relative;
+         background-color: $white;
+         z-index: 2;
+         padding: 18px;
+         display: flex;
+         top: -6px;
+         left: 8px;
+         transition: 0.3s ease-in-out;
+      }
+   }
+   .link-btn {
+      font-size: 18px;
+      border-radius: 6px;
+   }
+}
+
+@media (max-width: 900px) {
+   .promo {
+      &__illustration {
+         width: 70%;
+         &-img {
+            height: auto;
+            max-width: 740px;
+            width: 112%;
+            object-fit: contain;
+         }
+      }
+      &__content {
+         max-width: 350px;
+      }
+      &__subheading {
+         font-size: 17px;
+      }
+      &__button {
+         position: relative;
+         background-color: $white;
+         z-index: 2;
+         padding: 18px;
+         display: flex;
+         top: -6px;
+         left: 8px;
+         transition: 0.3s ease-in-out;
+      }
+   }
+   h1 {
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 768px) {
+   .promo {
+      &__content {
+         max-width: 100%;
+      }
+      &__wrapper {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &__illustration {
+         display: none;
+         &-mb {
+            display: block;
+            width: 80%;
+            margin-top: 10px;
+         }
+      }
+   }
+   h1 {
+      width: 350px;
+   }
+
+   .promo__subheading {
+      width: 460px;
+   }
+}
+
+@media (max-width: 640px) {
+   .promo {
+      &__illustration {
+         &-mb {
+            width: 90%;
+         }
+      }
+      &__button {
+         padding: 16px;
+      }
+   }
+   h1 {
+      width: 100%;
+      max-width: 350px;
+   }
+
+   .promo__subheading {
+      width: 100%;
+   }
+   .link-btn {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 490px) {
+   .promo {
+      &__wrapper {
+         padding: 26px;
+      }
+      &__illustration {
+         &-mb {
+            width: 100%;
+         }
+      }
+      &__button {
+         padding: 16px;
+         display: flex;
+         top: -6px;
+         left: 8px;
+      }
+   }
+   h1 {
+      font-size: 28px;
+   }
+
+   .promo__subheading {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 390px) {
+   .promo {
+      &__content {
+         align-items: center;
+      }
+      &__button {
+         padding: 16px;
+         display: flex;
+         top: -6px;
+         left: 8px;
+         &-container {
+            margin-top: 16px;
+         }
+      }
+   }
+   h1 {
+      width: 100%;
+      max-width: 350px;
+      font-size: 26px;
+   }
+
+   .promo__subheading {
+      font-size: 14px;
+      letter-spacing: normal;
+   }
+   .link-btn {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 340px) {
+   h1 {
+      width: 100%;
+      max-width: 350px;
+      font-size: 24px;
+   }
+
+   .promo__subheading {
+      font-size: 13px;
+      letter-spacing: normal;
+   }
+   .link-btn {
+      font-size: 14px;
+   }
+   .promo__wrapper {
+      padding: 26px 20px;
    }
 }
