@@ -11,7 +11,7 @@ export default function burgerMenu() {
 
   // Функция для закрытия меню
   const closeMenu = () => {
-    gsap.to(nav, { left: "100vw", duration: 0.4, ease: "expo.in" });
+    gsap.to(nav, { right: "-100%", duration: 0.4, ease: "expo.in" });
     gsap.to(dimBackground, {
       opacity: 0, duration: 0.4, onComplete: () => {
         dimBackground.style.display = "none";
@@ -21,7 +21,7 @@ export default function burgerMenu() {
   };
 
   burger.addEventListener('click', () => {
-    gsap.to(nav, { left: "0%", duration: 0.4, ease: "expo.out" });
+    gsap.to(nav, { right: "0%", duration: 0.4, ease: "expo.out" });
     gsap.to(dimBackground, { display: "block", opacity: 1, duration: 0.5 });
     close.style.display = "block"; // Показать кнопку закрытия
   });
