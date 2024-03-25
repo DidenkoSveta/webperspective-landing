@@ -11,16 +11,28 @@ body {
 }
 
 h1 {
-   font-family: "Unbounded-Medium";
-   letter-spacing: 0.01em;
+   font-family: "Unbounded-Regular";
+   letter-spacing: 0.03em;
    line-height: 130%;
-   font-size: 54px;
+   font-size: 48px;
+   span {
+      color: $orange;
+   }
 }
 
+.container,
 .header__container {
    width: 100vw;
    padding: 0px 12vw;
    display: flex;
 }
 
-
+.link-btn{
+   position: relative;
+   font-size: 20px;
+   color: $orange;
+   font-family: "Gilroy-Medium";
+   border-radius: 8px;
+   border: 2px solid $orange;
+   z-index: 2;
+}
