@@ -63,11 +63,11 @@ html{
  input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
    -webkit-transition: background-color 5000s ease-in-out 0s;
    transition: background-color 5000s ease-in-out 0s;
-   -webkit-text-fill-color: $white;
+   -webkit-text-fill-color: #fff;
  }
  
  input:autofill, input:autofill:focus, input:autofill:hover {
    -webkit-transition: background-color 5000s ease-in-out 0s;
    transition: background-color 5000s ease-in-out 0s;
-   -webkit-text-fill-color: $white;
+   -webkit-text-fill-color: #fff;
  }

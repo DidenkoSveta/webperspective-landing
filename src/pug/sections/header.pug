@@ -2,7 +2,7 @@ header.header
    .header__container
       .header__logo
          a.header__logo-link(href="/")
-            img.header__logo-img(src=require("../../images/icons/logo-header.png"), alt="Кузня")
+            img.header__logo-img(src=require("../../images/icons/header/logo-header.svg"), alt="logo")
       
       a.header__burger
          span.burger-icon 
@@ -10,20 +10,22 @@ header.header
          a.header__close 
          ul.header__nav-list
             li.header__nav-item
-               a.header__nav-link(href="#services") Секции
+               a.header__nav-link(href="#development") Создание сайтов
             li.header__nav-item
-               a.header__nav-link(href="#about") О клубе
+               a.header__nav-link(href="#marketing") Продвижение
             li.header__nav-item
-               a.header__nav-link(href="#advantages") Преимущества
+               a.header__nav-link(href="#portfolio") Портфолио
             li.header__nav-item
-               a.header__nav-link(href="#schedule") Расписание
+               a.header__nav-link(href="#about") О нас
             li.header__nav-item
-               a.header__nav-link(href="#pricing") Стоимость
+               a.header__nav-link(href="#contacts") Контакты
             li.header__nav-item
-               a.header__nav-link(href="#faq") FAQ
-            li.header__nav-item
-               a.header__nav-link(href="#contact") Контакты
 
-      .header__contact
-         a.header__contact-phone(href="tel:+79134360007" rel="nofollow") 8-913-436-00-07
-         a.header__contact-button(href="https://wa.me/79134360007" target="_blank" rel="nofollow") Написать в вотсап
+         .header__contact
+            a(href="#").social-media__link 
+               img.social-media-img(src=require("../../images/icons/header/whatsapp.svg"), alt="whatsapp")
+            a(href="#").social-media__link 
+               img.social-media-img(src=require("../../images/icons/header/telegram.svg"), alt="telegram")
+            a(href="#").social-media__link 
+               img.social-media-img(src=require("../../images/icons/header/vk.svg"), alt="vk")
+         a.header__contact-phone(href="tel:+79675559830" rel="nofollow") +7 (967) 555-98-30

@@ -3,4 +3,52 @@
 @import "fonts";
 @import "global";
 
+.header {
+   background-color: $white;
+   &__container {
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__nav,
+   &__contact,
+   &__nav-list {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__nav {
+      width: 85%;
+      align-items: center;
+      padding: 24px 0;
+      &-list {
+         width: 600px;
+         align-items: center;
+      }
+      &-link {
+         color: $black;
+         font-family: "Gilroy-Medium";
+         font-size: 18px;
+      }
+   }
+   &__contact {
+      width: 140px;
+      &-phone {
+         color: $black;
+         font-family: "Gilroy-SemiBold";
+         font-weight: 800;
+         font-size: 18px;
+      }
+   }
+}
+
+.social-media__link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 36px;
+   height: 36px;
+   border-radius: 5px;
+   border: 2px solid $black;
+   background-color: $white;
+}
+
 @import "mobile";
