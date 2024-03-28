@@ -24,10 +24,16 @@ header.header
             li.header__nav-item
 
          .header__contact
-            a(href="#").social-media__link 
-               img.social-media-img(src=require("../../images/icons/header/whatsapp.svg"), alt="whatsapp")
-            a(href="#").social-media__link 
-               img.social-media-img(src=require("../../images/icons/header/telegram.svg"), alt="telegram")
-            a(href="#").social-media__link 
-               img.social-media-img(src=require("../../images/icons/header/vk.svg"), alt="vk")
+            .social-media__item 
+               a(href="#").social-media__link 
+                  img.social-media-img(src=require("../../images/icons/header/whatsapp.svg"), alt="whatsapp")
+               .social-media__shadow 
+            .social-media__item 
+               a(href="#").social-media__link 
+                  img.social-media-img(src=require("../../images/icons/header/telegram.svg"), alt="telegram")
+               .social-media__shadow 
+            //- .social-media__item 
+            //-    a(href="#").social-media__link 
+            //-       img.social-media-img(src=require("../../images/icons/header/vk.svg"), alt="vk")
+            //-    .social-media__shadow 
          a.header__contact-phone(href="tel:+79675559830" rel="nofollow") +7 (967) 555-98-30

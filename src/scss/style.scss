@@ -27,15 +27,23 @@
          color: $black;
          font-family: "Gilroy-Medium";
          font-size: 18px;
+         transition: color 0.2s ease-in-out;
+      }
+      &-item :hover {
+         color: $orange;
       }
    }
    &__contact {
-      width: 140px;
+      width: 90px;
       &-phone {
          color: $black;
          font-family: "Gilroy-SemiBold";
          font-weight: 800;
          font-size: 18px;
+         transition: 0.2s ease-in-out;
+      }
+      &-phone:hover {
+         color: $orange;
       }
    }
    &__logo {
@@ -68,15 +76,43 @@
    }
 }
 
-.social-media__link {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 36px;
-   height: 36px;
-   border-radius: 5px;
-   border: 2px solid $black;
-   background-color: $white;
+.social-media {
+   position: relative;
+   &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+   }
+   &__link {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 2px solid $black;
+      background-color: $white;
+      border-radius: 5px;
+      bottom: 2px;
+      left: 2px;
+      transition: 0.1s ease-in-out;
+   }
+   &__shadow {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      z-index: 1;
+      border-radius: 5px;
+   }
+   &__link:hover {
+      bottom: 0;
+      left: 0;
+   }
 }
 
 .promo {
@@ -139,7 +175,7 @@
          width: 100%;
          object-fit: contain;
       }
-      &-mb{
+      &-mb {
          display: none;
       }
    }
