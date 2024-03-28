@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 1240px) {
+   .container {
+      margin-bottom: 50px;
+   }
    .header {
       &__nav-list {
          width: 64%;
@@ -89,7 +92,7 @@
       }
       &__quote {
          padding: 40px;
-         border: 2px solid $orange;
+         border: 1px solid $orange;
          @include box-style-1240;
       }
       &__blockquote {
@@ -106,12 +109,13 @@
             gap: 14px;
             padding: 30px;
             @include box-style;
+            border: 1px dashed #38A960;
          }
       }
    }
 
    .advantage {
-      &__icon{
+      &__icon {
          height: 50px;
       }
       &__details {
@@ -255,6 +259,9 @@
 }
 
 @media (max-width: 768px) {
+   .container {
+      margin-bottom: 40px;
+   }
    .promo {
       &__content {
          max-width: 100%;
@@ -278,6 +285,75 @@
 
    .promo__subheading {
       width: 460px;
+   }
+}
+
+@media (max-width: 768px) {
+   .offer {
+      &__header {
+         gap: 20px;
+      }
+      &__advantages {
+         width: 100%;
+         flex-direction: column;
+         gap: 14px;
+      }
+      &__advantage {
+         &-item {
+            width: 100%;
+            padding: 40px;
+            @include box-style-mb;
+         }
+      }
+      &__quote {
+         @include box-style-mb;
+         background-color: $white;
+      }
+      &__blockquote {
+         font-size: 20px;
+         br {
+            display: none;
+         }
+      }
+      &__stats {
+         width: 100%;
+         flex-direction: column;
+         gap: 14px;
+         &-item {
+            width: 100%;
+            gap: 14px;
+            padding: 40px;
+            @include box-style-mb;
+         }
+      }
+   }
+
+   .advantage {
+      &__details {
+         gap: 14px;
+      }
+      &__title {
+         font-size: 16px;
+         font-family: "Unbounded-Regular";
+      }
+      &__description {
+         font-family: "Gilroy-Medium";
+         font-size: 16px;
+      }
+   }
+   .stat {
+      &__title {
+         font-size: 20px;
+         font-family: "Gilroy-Regular";
+         font-weight: 400;
+      }
+      &__fact {
+         font-family: "Unbounded-SemiBold";
+      }
+      &__description {
+         line-height: 140%;
+         max-width: 300px;
+      }
    }
 }
 
@@ -328,6 +404,106 @@
 
    .promo__subheading {
       font-size: 16px;
+   }
+}
+
+@media (max-width: 490px) {
+   .offer {
+      &__advantages {
+         gap: 12px;
+      }
+      &__advantage {
+         &-item {
+            padding: 30px 20px;
+            gap: 20px;
+         }
+      }
+      &__quote {
+         @include box-style-mb;
+         background-color: $white;
+         padding: 30px 20px;
+      }
+      &__blockquote {
+         font-size: 18px;
+      }
+      &__stats {
+         gap: 12px;
+         &-item {
+            gap: 14px;
+            padding: 30px 20px;
+            @include box-style-mb;
+         }
+      }
+   }
+
+   .advantage {
+      &__title {
+         font-size: 14px;
+      }
+      &__description {
+         font-size: 14px;
+      }
+      &__icon {
+         height: 40px;
+      }
+   }
+   .stat {
+      &__title {
+         font-size: 16px;
+      }
+   }
+}
+
+@media (max-width: 390px) {
+   .offer {
+      &__header {
+         gap: 12px;
+      }
+      &__advantage {
+         &-item {
+            gap: 12px;
+            align-items: flex-start;
+         }
+      }
+      &__blockquote::before {
+         width: 26px;
+         object-fit: contain;
+         margin-right: 10px;
+      }
+      &__blockquote {
+         font-size: 15px;
+         line-height: 130%;
+      }
+      &__stats {
+         gap: 12px;
+         &-item {
+            gap: 8px;
+            padding: 30px 20px;
+         }
+      }
+   }
+
+   .advantage {
+      &__title {
+         font-size: 12px;
+      }
+      &__description {
+         font-size: 14px;
+      }
+      &__icon {
+         height: 30px;
+      }
+      &__details {
+         gap: 8px;
+      }
+   }
+   .stat {
+      &__title {
+         font-size: 14px;
+      }
+      &__fact {
+         font-size: 12px;
+      }
    }
 }
 

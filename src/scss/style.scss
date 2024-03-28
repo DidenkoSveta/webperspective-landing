@@ -182,6 +182,7 @@
 }
 
 .offer {
+   width: 100vw;
    &__header {
       width: 100%;
       display: flex;
@@ -245,6 +246,7 @@
          padding: 40px;
          background-color: $white;
          @include box-style;
+         border: 2px dashed #38A960;
       }
    }
 }

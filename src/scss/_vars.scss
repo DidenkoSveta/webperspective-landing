@@ -1,7 +1,7 @@
 $black: #2F3338;
 $white: #ffffff;
 $orange: #F47E51;
-$gray: #f1f3f5;
+$gray: #f7f7f7;
 
 @mixin box-style {
    border-radius: 20px;
@@ -11,4 +11,9 @@ $gray: #f1f3f5;
  @mixin box-style-1240 {
    border-radius: 16px;
    box-shadow: 0 0 8px 0 #e3e4e4;
+ }
+
+ @mixin box-style-mb {
+   border-radius: 12px;
+   box-shadow: 0 0 4px 0 #e3e4e4ce;
  }

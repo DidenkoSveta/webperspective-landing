@@ -16,6 +16,12 @@ body {
    }
 }
 
+@media (max-width: 490px) {
+   body {
+      font-size: 12px;
+   }
+}
+
 h1 {
    font-family: "Unbounded-Regular";
    letter-spacing: 0.03em;
@@ -50,4 +56,25 @@ h1 {
 .title {
    font-size: 38px;
    margin-bottom: 20px;
+}
+
+@media (max-width: 1240px){
+   .title {
+      font-size: 34px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 768px){
+   .title {
+      font-size: 28px;
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 490px){
+   .title {
+      font-size: 24px;
+      margin-bottom: 14px;
+   }
 }
