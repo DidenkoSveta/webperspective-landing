@@ -131,7 +131,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: $white;
-      border-radius: 20px;
+      @include box-style;
    }
    &__subheading {
       font-size: 22px;
@@ -178,6 +178,105 @@
       &-mb {
          display: none;
       }
+   }
+}
+
+.offer {
+   &__header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+   &__advantages {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__advantage {
+      &-item {
+         width: 49%;
+         background-color: $white;
+         display: flex;
+         padding: 40px 60px;
+         gap: 40px;
+         @include box-style;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+   &__quote {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      border: 2px solid $orange;
+      @include box-style;
+      background-color: $white;
+   }
+   &__blockquote {
+      font-size: 28px;
+      font-family: "Gilroy-Medium";
+      line-height: 150%;
+      display: flex;
+      align-items: flex-start;
+   }
+   &__blockquote::before {
+      content: "";
+      display: block;
+      margin-right: 20px;
+      background-image: url("../images/icons/offer/quote-icon.svg");
+      width: 27px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+   &__stats {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &-item {
+         width: 32%;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         padding: 40px;
+         background-color: $white;
+         @include box-style;
+      }
+   }
+}
+
+.advantage {
+   &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 20px;
+   }
+   &__title {
+      font-size: 22px;
+      font-family: "Unbounded-Regular";
+   }
+   &__description {
+      max-width: 390px;
+      font-family: "Gilroy-Medium";
+   }
+}
+.stat {
+   &__title {
+      font-size: 20px;
+      font-family: "Gilroy-Regular";
+      font-weight: 400;
+   }
+   &__fact {
+      font-family: "Unbounded-SemiBold";
+   }
+   &__description {
+      line-height: 140%;
+      max-width: 300px;
    }
 }
 

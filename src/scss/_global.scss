@@ -10,6 +10,12 @@ body {
    background-color: $gray;
 }
 
+@media (max-width: 1040px) {
+   body {
+      font-size: 14px;
+   }
+}
+
 h1 {
    font-family: "Unbounded-Regular";
    letter-spacing: 0.03em;
@@ -27,7 +33,11 @@ h1 {
    display: flex;
 }
 
-.link-btn{
+.container {
+   margin-bottom: 60px;
+}
+
+.link-btn {
    position: relative;
    font-size: 20px;
    color: $orange;
@@ -35,4 +45,9 @@ h1 {
    border-radius: 8px;
    border: 2px solid $orange;
    z-index: 2;
+}
+
+.title {
+   font-size: 38px;
+   margin-bottom: 20px;
 }
