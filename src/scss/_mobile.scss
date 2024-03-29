@@ -32,7 +32,7 @@
 
 @media (max-width: 1240px) {
    .container {
-      margin-bottom: 50px;
+      margin-bottom: 70px;
    }
    .header {
       &__nav-list {
@@ -51,6 +51,9 @@
       font-size: 42px;
    }
    .promo {
+      &__container{
+         margin-bottom: 50px!important;
+      }
       &__content {
          max-width: 430px;
          gap: 10px;
@@ -202,6 +205,7 @@
       font-size: 36px;
    }
    .promo {
+      margin-top: 90px;
       &__content {
          max-width: 370px;
       }
@@ -260,9 +264,12 @@
 
 @media (max-width: 768px) {
    .container {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
    }
    .promo {
+      &__container{
+         margin-bottom: 50px!important;
+      }
       &__content {
          max-width: 100%;
       }
@@ -383,6 +390,10 @@
 
 @media (max-width: 490px) {
    .promo {
+      margin-top: 84px;
+      &__container{
+         margin-bottom: 30px!important;
+      }
       &__wrapper {
          padding: 26px;
       }
@@ -488,7 +499,7 @@
          font-size: 12px;
       }
       &__description {
-         font-size: 14px;
+         font-size: 13px;
       }
       &__icon {
          height: 30px;
