@@ -51,8 +51,8 @@
       font-size: 42px;
    }
    .promo {
-      &__container{
-         margin-bottom: 50px!important;
+      &__container {
+         margin-bottom: 50px !important;
       }
       &__content {
          max-width: 430px;
@@ -112,7 +112,7 @@
             gap: 14px;
             padding: 30px;
             @include box-style;
-            border: 1px dashed #38A960;
+            border: 1px dashed #38a960;
          }
       }
    }
@@ -267,8 +267,8 @@
       margin-bottom: 50px;
    }
    .promo {
-      &__container{
-         margin-bottom: 50px!important;
+      &__container {
+         margin-bottom: 50px !important;
       }
       &__content {
          max-width: 100%;
@@ -391,8 +391,8 @@
 @media (max-width: 490px) {
    .promo {
       margin-top: 84px;
-      &__container{
-         margin-bottom: 30px!important;
+      &__container {
+         margin-bottom: 30px !important;
       }
       &__wrapper {
          padding: 26px;
@@ -564,5 +564,296 @@
    }
    .promo__wrapper {
       padding: 26px 20px;
+   }
+}
+
+@media (max-width: 1440px) {
+   .develop {
+      &__card {
+         gap: 60px;
+      }
+   }
+
+   .card {
+      &__header {
+         gap: 12px;
+      }
+      &__title {
+         font-size: 28px;
+      }
+      &__info,
+      &__time {
+         font-size: 18px;
+      }
+      &__price {
+         font-size: 32px;
+      }
+      &__button {
+         &-details {
+            font-size: 18px;
+         }
+         &-order {
+            padding: 20px 70px;
+            font-size: 18px;
+         }
+      }
+   }
+
+   .develop__benefit {
+      &-title {
+         font-size: 28px;
+      }
+      &-item {
+         padding: 30px;
+         font-size: 18px;
+      }
+      &-number {
+         width: 50px;
+         height: 50px;
+         font-size: 20px;
+      }
+   }
+}
+
+@media (max-width: 1240px) {
+   .develop {
+      &__card {
+         gap: 50px;
+         padding: 40px 30px;
+      }
+   }
+   .card {
+      &__header {
+         gap: 10px;
+         &-descr,
+         &-tarif {
+            gap: 10px;
+         }
+      }
+      &__title {
+         font-size: 26px;
+      }
+      &__price {
+         font-size: 26px;
+      }
+      &__button {
+         &-details {
+            font-size: 20px;
+         }
+         &-order {
+            padding: 16px 60px;
+            font-size: 18px;
+         }
+      }
+   }
+
+   .develop__benefit {
+      &-title {
+         font-size: 24px;
+      }
+      &-item {
+         padding: 30px;
+         font-size: 16px;
+      }
+      &-number {
+         width: 46px;
+         height: 46px;
+      }
+      &-text {
+         max-width: 190px;
+      }
+   }
+}
+
+@media (max-width: 1040px) {
+   .card {
+      width: 33%;
+      &__title {
+         font-size: 22px;
+      }
+      &__info,
+      &__time {
+         font-size: 16px;
+      }
+      &__header {
+         gap: 8px;
+         &-descr,
+         &-tarif {
+            gap: 8px;
+         }
+      }
+      &__for {
+         font-size: 15px;
+      }
+      &__price {
+         font-size: 22px;
+      }
+      &__button-order {
+         padding: 14px 40px;
+         font-size: 16px;
+      }
+      &__button-details {
+         font-size: 16px;
+      }
+      &__body {
+         gap: 10px;
+      }
+   }
+   .develop {
+      &__benefits {
+         gap: 10px;
+      }
+      &__card {
+         gap: 30px;
+         padding: 20px 12px 30px;
+         width: 33%;
+      }
+      &__cards {
+         column-gap: 12px;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .develop {
+      &__card {
+         width: 47%;
+      }
+      &__cards {
+         flex-wrap: wrap;
+         row-gap: 60px;
+         margin-top: 26px;
+         justify-content: center;
+         column-gap: 20px;
+      }
+      &__benefits {
+         flex-direction: column;
+         gap: 20px;
+      }
+   }
+
+   .develop__benefit {
+      &-grid {
+         flex-wrap: wrap;
+         width: 100%;
+         gap: 14px;
+      }
+      &-title {
+         font-size: 24px;
+      }
+      &-item {
+         padding: 30px;
+         font-size: 16px;
+         text-align: center;
+         justify-content: center;
+      }
+      &-item:nth-child(1),
+      &-item:nth-child(2) {
+         width: 47%;
+      }
+      &-item:nth-child(3) {
+         width: 100%;
+      }
+      &-number {
+         width: 46px;
+         height: 46px;
+      }
+      &-text {
+         max-width: 190px;
+      }
+   }
+}
+
+@media (max-width: 490px) {
+   .develop {
+      &__container{
+         gap: 18px;
+      }
+      &__card {
+         width: 100%;
+         @include box-style-mb;
+      }
+      &__cards {
+         flex-wrap: wrap;
+         row-gap: 30px;
+         margin-top: 36px;
+         justify-content: center;
+         column-gap: 20px;
+      }
+      &__benefits {
+         flex-direction: column;
+         gap: 12px;
+      }
+   }
+   .card__before {
+      height: 60px;
+      bottom: 86%;
+   }
+   .card {
+      &__header {
+         gap: 10px;
+         &-descr {
+            width: 189px;
+            gap: 5px;
+         }
+      }
+      &__price{
+         font-size: 20px;
+      }
+      &__info,
+      &__time {
+         text-align: right;
+         font-size: 13px;
+         line-height: normal;
+      }
+      &__for{
+         font-size: 13px;
+      }
+      &__header-tarif {
+         flex-direction: row;
+         justify-content: space-between;
+      }
+      &__hr {
+         height: 1px;
+      }
+      &__title {
+         font-size: 17px;
+         text-align: left;
+      }
+      &__button-order {
+         padding: 10px 40px;
+         font-size: 14px;
+         top: -4px;
+         left: 5px;
+      }
+      &__button-details {
+         font-size: 14px;
+      }
+   }
+
+   .develop__benefit {
+      &-title {
+         font-size: 18px;
+      }
+      &-item {
+         padding: 18px;
+         font-size: 16px;
+         text-align: center;
+         justify-content: center;
+      }
+      &-number {
+         width: 26px;
+         height: 26px;
+         z-index: 1;
+         font-size: 16px;
+      }
+      &-text {
+         max-width: 160px;
+         z-index: 2;
+         font-size: 13px;
+      }
+      &-grid{
+         gap: 12px;
+      }
    }
 }
