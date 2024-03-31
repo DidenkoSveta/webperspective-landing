@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -10,10 +11,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    // publicPath: '/',
   },
   resolve: {
-    extensions: ['.js'], // Указывает webpack расширения файлов для обработки
+    extensions: ['.js'],
   },
   module: {
     rules: [
@@ -32,17 +32,40 @@ module.exports = {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
-      // Изменённое правило для обработки изображений
       {
-        test: /\.(png|svg|jpe?g|gif)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: (pathData) => {
-            const relativePath = path.relative(path.resolve(__dirname, 'src'), pathData.filename);
-            return `images/${relativePath.replace(/\\+/g, '/')}`.replace('images/images/', 'images/');
+        oneOf: [
+          {
+            test: /\.svg$/,
+            include: [path.resolve(__dirname, 'src/icons')],
+            use: [
+              {
+                loader: 'svg-sprite-loader',
+                options: {
+                  extract: true,
+                  publicPath: '/'
+                }
+              },
+              'svgo-loader',
+            ]
           },
-        },
+          {
+            test: /\.(png|jpe?g|gif|svg)$/i,
+            exclude: [path.resolve(__dirname, 'src/icons')],
+            type: 'asset/resource',
+            generator: {
+              filename: 'images/[name][ext][query]',
+            },
+          },
+          {
+            test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+            generator: {
+              filename: 'fonts/[name][ext][query]',
+            },
+          },
+        ]
       },
+      // ... (другие правила)
     ],
   },
   plugins: [
@@ -59,15 +82,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new MiniCssExtractPlugin({
-      filename: '[name].min.css', // Минифицированный CSS
-    }),
+    new SpriteLoaderPlugin({ plainSprite: true }),
   ],
   optimization: {
     minimizer: [
-      new CssMinimizerPlugin({
-        test: /\.min\.css$/i, 
-      }),
+      new CssMinimizerPlugin(),
       new TerserPlugin(),
     ],
   },
