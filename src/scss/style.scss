@@ -240,7 +240,7 @@
       height: 20px;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: top center;
    }
    &__stats {
       width: 100%;
@@ -488,6 +488,7 @@
 }
 
 .how-we-do {
+   width: 100vw;
    &__container {
       flex-direction: column;
       align-items: flex-start;
@@ -509,7 +510,7 @@
       padding: 40px;
       display: flex;
       gap: 6px;
-      background-color: #F9FCF6;
+      background-color: #f9fcf6;
       &-title {
          font-size: 20px;
       }
@@ -533,13 +534,13 @@
       }
    }
    &__block:nth-child(2) {
-      background-color: #FFFBFA;
+      background-color: #fffbfa;
       .how-we-do__block-icon {
          background-image: url("../images/icons/how-we-do/how-we-do-02.svg");
       }
    }
    &__block:nth-child(3) {
-      background-color: #FCFAFF;
+      background-color: #fcfaff;
       .how-we-do__block-icon {
          background-image: url("../images/icons/how-we-do/how-we-do-03.svg");
       }
@@ -565,6 +566,7 @@
       flex-direction: column;
       align-items: flex-start;
       max-width: 400px;
+      z-index: 2;
       &-btn {
          position: relative;
          margin-top: 10px;
@@ -626,14 +628,14 @@
       object-fit: contain;
    }
    &__quote {
-      max-width: 1300px;
+      max-width: 1100px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 60px;
    }
    &__blockquote {
-      font-size: 28px;
+      font-size: 24px;
       font-family: "Gilroy-Medium";
       line-height: 150%;
       display: flex;
@@ -641,14 +643,15 @@
    }
    &__blockquote::before {
       content: "";
-      display: block;
+      display: inline-block;
       margin-right: 8px;
       background-image: url("../images/icons/offer/quote-icon.svg");
       width: 35px;
       height: 30px;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: top center;
+      object-fit: contain;
    }
 }
 
