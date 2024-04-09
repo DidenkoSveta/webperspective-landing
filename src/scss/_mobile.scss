@@ -22,10 +22,13 @@
          width: 60%;
          &-img {
             height: auto;
-            max-width: 640px;
+            max-width: 740px;
             width: 100%;
             object-fit: contain;
          }
+      }
+      &__content{
+         max-width: 490px;
       }
    }
 }
@@ -76,6 +79,12 @@
          &-container {
             position: relative;
             margin-top: 30px;
+         }
+      }
+      &__illustration{
+         position: relative;
+         &-img{
+            width: 108%;
          }
       }
    }
@@ -287,11 +296,11 @@
       }
    }
    h1 {
-      width: 350px;
+      width: auto;
    }
 
    .promo__subheading {
-      width: 460px;
+      width: 90%;
    }
 }
 
@@ -1013,6 +1022,23 @@
             padding: 20px 70px;
          }
       }
+      &__guarantee {
+         &-title {
+            font-size: 28px;
+         }
+      }
+      &__step {
+         gap: 10px;
+         &-text {
+            font-size: 16px;
+         }
+         &-num {
+            font-size: 20px;
+         }
+         &-icon {
+            height: 40px;
+         }
+      }
    }
 }
 
@@ -1027,6 +1053,11 @@
          &-order {
             padding: 16px 60px;
             font-size: 16px;
+         }
+      }
+      &__guarantee {
+         &-title {
+            font-size: 24px;
          }
       }
    }
@@ -1062,6 +1093,9 @@
             gap: 8px;
          }
       }
+      &__steps {
+         width: 96%;
+      }
       &__offer::before {
          content: "";
          top: -3px;
@@ -1090,6 +1124,29 @@
          font-size: 18px;
          margin-bottom: 16px;
       }
+      &__guarantee {
+         flex-direction: column;
+         align-items: center;
+      }
+      &__steps {
+         width: 100%;
+         gap: 10px;
+         justify-content: space-between;
+      }
+      &__step {
+         padding: 20px;
+         &-item {
+         }
+         &-icon {
+            height: 32px;
+         }
+         &-num {
+            font-size: 18px;
+         }
+         &-text {
+            font-size: 14px;
+         }
+      }
    }
 }
 
@@ -1114,7 +1171,7 @@
             top: -4px;
             left: 5px;
          }
-         &-details{
+         &-details {
             font-size: 14px;
          }
       }
@@ -1122,5 +1179,33 @@
          font-size: 16px;
          margin-bottom: 10px;
       }
+      &__guarantee {
+         gap: 12px;
+         &-title {
+            font-size: 18px;
+         }
+      }
+      &__step {
+         padding: 10px;
+         width: 48%;
+         &-item {
+         }
+         &-icon {
+            height: 30px;
+         }
+         &-num {
+            font-size: 18px;
+         }
+         &-text {
+            font-size: 12px;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 375px){
+   .marketing__steps{
+      flex-wrap: wrap;
    }
 }

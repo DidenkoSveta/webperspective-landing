@@ -153,7 +153,7 @@
       top: -8px;
       left: 10px;
       transition: 0.3s ease-in-out;
-      font-family: 'Mulish-Medium';
+      font-family: "Mulish-Medium";
       font-weight: 500;
       &-container {
          position: relative;
@@ -181,7 +181,7 @@
       width: 60%;
       &-img {
          height: auto;
-         max-width: 740px;
+         max-width: 840px;
          width: 100%;
          object-fit: contain;
       }
@@ -414,7 +414,7 @@
          border-radius: 8px;
          color: $black;
          font-size: 20px;
-         font-family: 'Mulish-Medium';
+         font-family: "Mulish-Medium";
       }
       &-shadow {
          display: block;
@@ -605,7 +605,7 @@
       border-radius: 8px;
       color: $orange;
       font-size: 18px;
-      font-family: 'Mulish-Medium';
+      font-family: "Mulish-Medium";
       font-weight: 500;
    }
    &-shadow {
@@ -662,8 +662,8 @@
 }
 
 .marketing {
-   &__title{
-      font-family: 'Mulish-Bold';
+   &__title {
+      font-family: "Mulish-Bold";
    }
    &__container {
       flex-direction: column;
@@ -737,7 +737,7 @@
          color: $orange;
          font-size: 18px;
          font-weight: 500;
-         font-family: 'Mulish-Medium';
+         font-family: "Mulish-Medium";
          text-align: center;
       }
       &-shadow {
@@ -782,7 +782,7 @@
       &__feature {
          font-weight: 600;
       }
-      &__features{
+      &__features {
          display: flex;
          flex-direction: column;
          gap: 4px;
@@ -800,6 +800,59 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: top center;
+   }
+}
+
+.marketing {
+   &__guarantee {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      &-title {
+         font-size: 32px;
+         line-height: 120%;
+      }
+   }
+   &__steps {
+      display: flex;
+      gap: 20px;
+      width: 70%;
+   }
+   &__step {
+      width: 32%;
+      padding: 30px;
+      background-color: #fffbfa;
+      @include box-style-litle;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      &-num {
+         font-size: 24px;
+         font-family: "Unbounded-Regular";
+      }
+      &-item {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &-text{
+         font-size: 20px;
+         line-height: 120%;
+         font-family: 'Mulish-Medium';
+         font-weight: 600;
+      }
+   }
+   &__step:nth-child(1){
+      background-color: #fffbfa;
+   }
+   &__step:nth-child(2){
+      background-color: #fcfaff;
+   }
+   &__step:nth-child(3){
+      background-color: #f9fcf6;
    }
 }
 

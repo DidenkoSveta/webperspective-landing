@@ -56,7 +56,19 @@ section.marketing
 
       .marketing__guarantee
          h3.marketing__guarantee-title Гарантируем результат
-         ol.marketing__steps
-            li.marketing__step Рост позиций вашего сайта
-            li.marketing__step Повышение посещаемости
-            li.marketing__step Увеличение обращений
+         .marketing__steps
+            .marketing__step 
+               .marketing__step-item 
+                  p.marketing__step-num 1
+                  img.marketing__step-icon(src=require("../../images/icons/marketing/marketing-icon-01.svg"), alt="marketing-icon")
+               p.marketing__step-text Повышение посещаемости
+            .marketing__step 
+               .marketing__step-item
+                  p.marketing__step-num 2
+                  img.marketing__step-icon(src=require("../../images/icons/marketing/marketing-icon-02.svg"), alt="marketing-icon")
+               p.marketing__step-text Рост позиций вашего сайта
+            .marketing__step 
+               .marketing__step-item
+                  p.marketing__step-num 3
+                  img.marketing__step-icon(src=require("../../images/icons/marketing/marketing-icon-03.svg"), alt="marketing-icon")
+               p.marketing__step-text Увеличение обращений
