@@ -868,7 +868,7 @@
       background-color: #fcfaff;
       @include box-style;
       padding: 20px 40px 0;
-      .how-we-do__detail-btn{
+      .how-we-do__detail-btn {
          margin-top: 20px;
       }
       .how-we-do-order {
@@ -891,7 +891,7 @@
       &-wrapper {
       }
    }
-   &__title{
+   &__title {
       font-size: 23px;
    }
    &__info {
@@ -908,6 +908,39 @@
       span {
          color: #6e46be;
       }
+   }
+}
+.steps {
+   &__container {
+      flex-direction: column;
+      gap: 40px;
+   }
+   &__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+   }
+   &__item {
+      width: 48%;
+      padding: 30px 40px;
+      @include box-style-litle;
+      background-color: $white;
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+   }
+   &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   &__icon {
+      height: 46px;
+   }
+   &__title {
+      font-size: 20px;
    }
 }
 
