@@ -3,11 +3,14 @@ body {
    width: 100vw;
    overflow-x: hidden;
    color: $black;
-   font-size: 16px;
-   font-family: "Gilroy-Regular";
+   font-size: 15px;
+   font-family: "Mulish-Regular";
    letter-spacing: 0.02em;
-   line-height: 130%;
+   line-height: 120%;
    background-color: $gray;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   font-smooth: always;
 }
 
 @media (max-width: 1040px) {
@@ -47,7 +50,7 @@ h1 {
    position: relative;
    font-size: 20px;
    color: $orange;
-   font-family: "Gilroy-Medium";
+   font-family: "Mulish-Regular";
    border-radius: 8px;
    border: 2px solid $orange;
    z-index: 2;
@@ -56,25 +59,25 @@ h1 {
 .title {
    font-size: 38px;
    margin-bottom: 20px;
-   font-family: "Gilroy-Medium";
+   font-family: "Mulish-Medium";
    letter-spacing: 0.03em;
 }
 
-@media (max-width: 1240px){
+@media (max-width: 1240px) {
    .title {
       font-size: 30px;
       margin-bottom: 20px;
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
    .title {
       font-size: 28px;
       margin-bottom: 10px;
    }
 }
 
-@media (max-width: 490px){
+@media (max-width: 490px) {
    .title {
       font-size: 24px;
       margin-bottom: 0px;

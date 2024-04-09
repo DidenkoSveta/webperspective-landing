@@ -132,7 +132,7 @@
       }
       &__description {
          max-width: 390px;
-         font-family: "Gilroy-Medium";
+         font-family: "Mulish-Medium";
       }
    }
    .stat {
@@ -180,7 +180,7 @@
             font-size: 20px;
             color: $white;
             font-weight: 400;
-            font-family: "Gilroy-Regular";
+            font-family: "Mulish-Regular";
          }
       }
       &__burger {
@@ -194,7 +194,7 @@
          font-size: 18px;
          color: $orange;
          font-weight: 200;
-         font-family: "Gilroy-SemiBold";
+         font-family: "Mulish-SemiBold";
          order: 3;
       }
       &__contact {
@@ -344,14 +344,14 @@
          font-family: "Unbounded-Regular";
       }
       &__description {
-         font-family: "Gilroy-Medium";
+         font-family: "Mulish-Medium";
          font-size: 16px;
       }
    }
    .stat {
       &__title {
          font-size: 20px;
-         font-family: "Gilroy-Regular";
+         font-family: "Mulish-Regular";
          font-weight: 400;
       }
       &__fact {
@@ -893,7 +893,8 @@
          left: 7px;
       }
       &__quote {
-         padding: 30px;
+         padding: 20px;
+         padding-bottom: 0;
       }
    }
 }
@@ -904,7 +905,7 @@
          padding: 20px 40px;
       }
       &__blockquote {
-         font-size: 20px;
+         font-size: 19px;
       }
    }
 }
@@ -948,10 +949,10 @@
          }
       }
       &__quote {
-         padding: 20px;
+         padding: 0px;
       }
       &__blockquote {
-         font-size: 16px;
+         font-size: 15px;
       }
    }
 }
@@ -995,12 +996,131 @@
             gap: 18px;
          }
       }
-      &__quote{
+      &__quote {
          padding: 0px;
          margin-top: 8px;
       }
-      &__blockquote{
+      &__blockquote {
          font-size: 14px;
+      }
+   }
+}
+
+@media (max-width: 1440px) {
+   .marketing {
+      &__offer {
+         &-order {
+            padding: 20px 70px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1240px) {
+   .marketing {
+      &__offer {
+         padding: 40px 30px;
+         &__cost {
+            font-size: 21px;
+            margin-bottom: 10px;
+         }
+         &-order {
+            padding: 16px 60px;
+            font-size: 16px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1040px) {
+   .marketing {
+      &__offer {
+         padding: 20px 12px 30px;
+         gap: 30px;
+         &__cost {
+            font-size: 21px;
+            margin-bottom: 10px;
+         }
+         &-order {
+            padding: 14px 40px;
+            font-size: 16px;
+         }
+         &__title {
+            font-size: 20px;
+            margin-bottom: 0;
+         }
+         &__cost {
+            font-size: 18px;
+         }
+         &-details {
+            font-size: 16px;
+         }
+         &__pricing {
+            gap: 10px;
+         }
+         &__header {
+            gap: 8px;
+         }
+      }
+      &__offer::before {
+         content: "";
+         top: -3px;
+         background-image: url("../images/icons/marketing/marketing-offer.svg");
+         width: 58px;
+         height: 18px;
+         left: calc(50% - 29px);
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .marketing {
+      &__offers {
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 30px;
+         column-gap: 20px;
+      }
+      &__offer {
+         padding: 20px 12px 30px;
+         width: 47%;
+         gap: 30px;
+      }
+      &__subtitle {
+         font-size: 18px;
+         margin-bottom: 16px;
+      }
+   }
+}
+
+@media (max-width: 490px) {
+   .marketing {
+      &__offers {
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 30px;
+         column-gap: 20px;
+      }
+      &__offer {
+         width: 100%;
+         gap: 30px;
+         border-radius: 12px;
+         &__cost {
+            margin-bottom: 0;
+         }
+         &-order {
+            padding: 10px 40px;
+            font-size: 14px;
+            top: -4px;
+            left: 5px;
+         }
+         &-details{
+            font-size: 14px;
+         }
+      }
+      &__subtitle {
+         font-size: 16px;
+         margin-bottom: 10px;
       }
    }
 }

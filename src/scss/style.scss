@@ -22,12 +22,12 @@
       align-items: center;
       padding: 24px 0;
       &-list {
-         width: 600px;
+         width: 640px;
          align-items: center;
       }
       &-link {
          color: $black;
-         font-family: "Gilroy-Medium";
+         font-family: "Mulish-Medium";
          font-size: 18px;
          transition: color 0.2s ease-in-out;
       }
@@ -39,7 +39,7 @@
       width: 90px;
       &-phone {
          color: $black;
-         font-family: "Gilroy-SemiBold";
+         font-family: "Mulish-SemiBold";
          font-weight: 800;
          font-size: 18px;
          transition: 0.2s ease-in-out;
@@ -139,8 +139,8 @@
       @include box-style;
    }
    &__subheading {
-      font-size: 22px;
-      font-family: "Gilroy-Medium";
+      font-size: 20px;
+      font-family: "Mulish-Medium";
       line-height: 130%;
    }
    &__button {
@@ -153,6 +153,8 @@
       top: -8px;
       left: 10px;
       transition: 0.3s ease-in-out;
+      font-family: 'Mulish-Medium';
+      font-weight: 500;
       &-container {
          position: relative;
          margin-top: 30px;
@@ -226,7 +228,7 @@
    }
    &__blockquote {
       font-size: 28px;
-      font-family: "Gilroy-Medium";
+      font-family: "Mulish-Medium";
       line-height: 150%;
       display: flex;
       align-items: flex-start;
@@ -272,13 +274,13 @@
    }
    &__description {
       max-width: 390px;
-      font-family: "Gilroy-Medium";
+      font-family: "Mulish-Medium";
    }
 }
 .stat {
    &__title {
       font-size: 20px;
-      font-family: "Gilroy-Regular";
+      font-family: "Mulish-Regular";
       font-weight: 400;
    }
    &__fact {
@@ -355,7 +357,7 @@
    }
    &__title {
       font-size: 32px;
-      font-family: "Gilroy-Medium";
+      font-family: "Mulish-Medium";
       letter-spacing: 0.05em;
       text-align: center;
       line-height: 120%;
@@ -367,7 +369,7 @@
    }
    &__for {
       text-align: center;
-      font-size: 16px;
+      font-size: 15px;
    }
    &__hr {
       height: 2px;
@@ -412,6 +414,7 @@
          border-radius: 8px;
          color: $black;
          font-size: 20px;
+         font-family: 'Mulish-Medium';
       }
       &-shadow {
          display: block;
@@ -437,7 +440,7 @@
    position: relative;
    &-text {
       max-width: 220px;
-      font-family: "Gilroy-Medium";
+      font-family: "Mulish-Medium";
    }
    &-title {
       font-size: 32px;
@@ -602,6 +605,8 @@
       border-radius: 8px;
       color: $orange;
       font-size: 18px;
+      font-family: 'Mulish-Medium';
+      font-weight: 500;
    }
    &-shadow {
       display: block;
@@ -632,11 +637,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 60px;
+      padding: 40px;
+      padding-bottom: 0;
    }
    &__blockquote {
       font-size: 24px;
-      font-family: "Gilroy-Medium";
+      font-family: "Mulish-Medium";
       line-height: 150%;
       display: flex;
       align-items: flex-start;
@@ -652,6 +658,148 @@
       background-repeat: no-repeat;
       background-position: top center;
       object-fit: contain;
+   }
+}
+
+.marketing {
+   &__title{
+      font-family: 'Mulish-Bold';
+   }
+   &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+   }
+   &__subtitle {
+      max-width: 650px;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 24px;
+      line-height: 130%;
+      span {
+         color: $orange;
+      }
+   }
+   &__offers {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__offer {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 32%;
+      background-color: $white;
+      padding: 40px;
+      gap: 60px;
+      border: 2px solid #616367;
+      border-radius: 20px;
+      &__title {
+         font-family: "Mulish-Medium";
+         font-size: 28px;
+         text-align: center;
+         margin-bottom: 10px;
+         line-height: 120%;
+         font-weight: 700;
+      }
+      &__header {
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         text-align: center;
+         align-items: center;
+         margin-top: 20px;
+      }
+      &__hr {
+         height: 1px;
+         background-color: #8e8e8e;
+         width: 100%;
+      }
+      &__pricing {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+      }
+      &-order {
+         position: relative;
+         background-color: $white;
+         z-index: 2;
+         padding: 20px 80px;
+         display: flex;
+         top: -6px;
+         left: 7px;
+         transition: 0.3s ease-in-out;
+         border-radius: 8px;
+         color: $orange;
+         font-size: 18px;
+         font-weight: 500;
+         font-family: 'Mulish-Medium';
+         text-align: center;
+      }
+      &-shadow {
+         display: block;
+         background-color: $orange;
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         z-index: 1;
+         border-radius: 8px;
+      }
+      &-order:hover {
+         top: 0px;
+         left: 0px;
+         background-color: $orange;
+         color: $white;
+      }
+      &-btn {
+         position: relative;
+         margin-top: 10px;
+      }
+      &__cost {
+         font-size: 24px;
+         font-weight: 600;
+         margin-bottom: 20px;
+         font-family: "Unbounded-Regular";
+         text-align: center;
+      }
+      &-details {
+         font-family: "Mulish-Regular";
+         font-size: 18px;
+         letter-spacing: 0.06em;
+         color: $black;
+         font-weight: 600;
+         transition: color 0.3s ease-in-out;
+      }
+      &-details:hover {
+         color: $orange;
+      }
+      &__feature {
+         font-weight: 600;
+      }
+      &__features{
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+      }
+   }
+   &__offer::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: -3px;
+      background-image: url("../images/icons/marketing/marketing-offer.svg");
+      width: 79px;
+      height: 24px;
+      left: calc(50% - 40px);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top center;
    }
 }
 
