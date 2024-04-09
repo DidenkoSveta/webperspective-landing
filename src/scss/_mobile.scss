@@ -27,7 +27,7 @@
             object-fit: contain;
          }
       }
-      &__content{
+      &__content {
          max-width: 490px;
       }
    }
@@ -81,9 +81,9 @@
             margin-top: 30px;
          }
       }
-      &__illustration{
+      &__illustration {
          position: relative;
-         &-img{
+         &-img {
             width: 108%;
          }
       }
@@ -1104,6 +1104,31 @@
          height: 18px;
          left: calc(50% - 29px);
       }
+      &__guarantee {
+         margin-top: 30px;
+      }
+   }
+   .learn {
+      &__container {
+         margin-top: 30px;
+         gap: 0px;
+         padding: 20px 20px 0;
+         .how-we-do__detail-btn {
+            margin-top: 10px;
+         }
+      }
+      &__image {
+         height: 260px;
+         &-wrapper {
+         }
+      }
+      &__title {
+         font-size: 20px;
+      }
+      &__info {
+         gap: 20px;
+         font-size: 18px;
+      }
    }
 }
 
@@ -1146,6 +1171,29 @@
          &-text {
             font-size: 14px;
          }
+      }
+   }
+   .learn {
+      &__container {
+         margin-top: 30px;
+         flex-direction: column-reverse;
+         gap: 20px;
+         padding: 30px 20px 0;
+         .how-we-do__detail-btn {
+            margin-top: 10px;
+         }
+      }
+      &__image {
+         height: 240px;
+         &-wrapper {
+         }
+      }
+      &__title {
+         font-size: 18px;
+      }
+      &__info {
+         gap: 20px;
+         font-size: 16px;
       }
    }
 }
@@ -1203,9 +1251,8 @@
    }
 }
 
-
-@media (max-width: 375px){
-   .marketing__steps{
+@media (max-width: 375px) {
+   .marketing__steps {
       flex-wrap: wrap;
    }
 }
