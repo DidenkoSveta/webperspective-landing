@@ -1,0 +1,38 @@
+section.contacts
+    .container.contacts__container
+        .contacts__form-block
+            h2.contacts__title Оставьте заявку
+            form.contacts__form(action="#" method="post")
+                .form-group.contacts__form-group
+                    label.form-label.contacts__form-label(for="name")
+                    input.form-input.contacts__form-input(type="text" name="name" id="name" placeholder="Имя" required)
+                .form-group.contacts__form-group
+                    label.form-label.contacts__form-label(for="phone")
+                    input.form-input.contacts__form-input(type="tel" name="phone" id="phone" placeholder="Телефон" required)
+                p.form-apperance Нажимая на кнопку отправить я соглашаюсь с 
+                    br 
+                    a.form-apperance__policy(href="privacy.html") Политикой конфиденциальности 
+                button.contacts__submit-button(type="submit") Отправить
+            img.contacts__icon(src=require("../../images/icons/contacts-form-icon.svg"), alt="marketing-icon")
+        .contacts__wrapper-block
+            .contacts__brief
+                h2.contacts__brief-title Или заполните бриф из 4 вопросов
+                p.contacts__description Чем раньше мы получим вашу заявку, тем лучше проработаем предложение
+                a.contacts__brief-button(href="#") Заполнить бриф
+
+            .contacts__details
+                a.contacts__phone(href="tel:+79675559830" rel="nofollow") +7 (967) 555-98-30
+                a.contacts__email(href="mailto:sales@webperspective.ru" rel="nofollow" target="blank") sales@webperspective.ru
+                .contacts__social
+                    .social-media__item 
+                        a.social-media__link(href="https://wa.me/79675559830" rel="nofollow" target="blank")
+                            img.social-media-img(src=require("../../images/icons/header/whatsapp.svg"), alt="whatsapp")
+                        .social-media__shadow 
+                    .social-media__item 
+                        a.social-media__link(href="https://t.me/WebPerspective" rel="nofollow" target="blank")
+                            img.social-media-img(src=require("../../images/icons/header/telegram.svg"), alt="telegram")
+                        .social-media__shadow 
+                    //- .social-media__item 
+                    //-     a.social-media__link(href="https://vk.com/webperspective" rel="nofollow" target="blank")
+                    //-         img.social-media-img(src=require("../../images/icons/header/vk.svg"), alt="vk")
+                    //-     .social-media__shadow 
