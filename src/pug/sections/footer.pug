@@ -1,4 +1,10 @@
 footer.footer
    .footer__container
-      a.footer__privacy-policy(href="privacy.html") Политика конфиденциальности
-      a.footer__credits(href="https://webperspective.ru/" target="_blank" rel="nofollow") Сделано в WebPerspective
+      .footer__policy
+         a.footer__policy-link(href="privacy.html") Политика конфиденциальности
+         p.footer__disclaimer Информация, опубликованная на сайте, не является публичной офертой
+
+      .footer__branding
+         a.footer__logo(href="/")
+            img(src=require("../../images/icons/logo-footer.svg"), alt="logo")
+         p.footer__copy © 2023–2024 «Web Perspective» Все права защищены
