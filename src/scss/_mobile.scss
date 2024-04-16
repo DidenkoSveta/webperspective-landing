@@ -1158,6 +1158,9 @@
       font-size: 18px;
     }
   }
+  .steps__item {
+    width: 48%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1188,8 +1191,6 @@
     }
     &__step {
       padding: 20px;
-      &-item {
-      }
       &-icon {
         height: 32px;
       }
@@ -1862,5 +1863,185 @@
   .privacy {
     margin-top: 100px;
     margin-bottom: 60px;
+  }
+}
+@media (max-width: 1240px) {
+  .contact-modal {
+    .modal-container {
+      max-width: 800px;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .contact-modal {
+    .modal-container {
+      padding: 70px 60px;
+    }
+    div.modal-content {
+      h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+      }
+    }
+    .modal__description {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .contact-modal {
+    .modal-container {
+      padding: 50px 40px;
+      width: 90%;
+    }
+    div.modal-content {
+      gap: 14px;
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .modal__description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .modal-container__close {
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .marketing-modal {
+    .context-container {
+      gap: 20px;
+    }
+    .context-ad-links {
+      p {
+        font-size: 16px;
+        width: 80%;
+      }
+    }
+    .context-ad__details {
+      gap: 0;
+    }
+    .context-ad__description {
+      padding: 20px;
+    }
+    .context-ad__why {
+      gap: 14px;
+    }
+    .context-ad__why .context-ad__list {
+      gap: 2px;
+    }
+    .context-ad-links a {
+      width: auto;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .marketing-modal {
+    padding: 30px;
+    width: 90%;
+    .context-container {
+      gap: 12px;
+    }
+    .context-ad__info {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .context-ad__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .context-ad-links {
+      p {
+        font-size: 15px;
+        width: 89%;
+      }
+    }
+    .context-ad__details {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 20px;
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .context-ad__description {
+      padding: 20px;
+      width: 100%;
+    }
+    .context-ad__why {
+      width: 100%;
+      gap: 14px;
+      h3 {
+        font-size: 1.2em;
+      }
+    }
+    .context-ad__why .context-ad__list {
+      gap: 2px;
+    }
+    .context-ad-links a {
+      width: auto;
+      font-size: 15px;
+    }
+    .context-advantages-descr {
+      h4 {
+        font-size: 16px;
+      }
+      img {
+        height: 30px;
+      }
+    }
+    .context-advantages__item {
+      gap: 2px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .marketing-modal {
+    padding: 20px;
+    width: 96%;
+    .context-container {
+      gap: 12px;
+      &__close{
+        top: 0px;
+        right: 0px;
+      }
+    }
+    .context-ad__title {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    .context-ad__details {
+      align-items: flex-start;
+      margin: 0;
+      p {
+        text-align: left;
+      }
+    }
+    .context-ad__advantages {
+      display: none;
+    }
+    .context-ad-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      p {
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }

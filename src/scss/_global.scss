@@ -1,9 +1,10 @@
 html,
 body {
+   position: relative;
    width: 100vw;
    overflow-x: hidden;
    color: $black;
-   font-size: 15px;
+   font-size: 16px;
    font-family: "Mulish-Regular";
    letter-spacing: 0.02em;
    line-height: 120%;
