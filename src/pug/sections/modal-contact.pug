@@ -7,6 +7,7 @@ div#modal.modal.contact-modal.hidden
          h2 Предложим решение вашей задачи
          p.modal__description Знакомство с вашим проектом займет 15-30 минут. Оставьте свои контакты и мы вместе выберем подходящее время
          form#enrollmentForm
+            input(type="hidden" id="source" name="source")
             div.form-group
                label(for="name") Как Вас зовут?
                input(type="text" id="name" name="name" required placeholder="Имя")

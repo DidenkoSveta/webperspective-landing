@@ -6,6 +6,7 @@ export default function modal() {
   const modalButtons = document.querySelectorAll('.modal-btn');
   const modalOverlay = document.getElementById('modalOverlay');
   const enrollmentForm = document.getElementById('enrollmentForm');
+  const sourceInput = document.querySelector('#source'); // Убедитесь, что скрытое поле добавлено в форму
   const allModals = document.querySelectorAll('.marketing-modal');
 
   function toggleModal(modalElement, show) {
@@ -21,7 +22,6 @@ export default function modal() {
     });
   }
 
-  // Закрытие всех модальных окон
   function closeAllModals() {
     allModals.forEach(modalElement => {
       if (gsap.getProperty(modalElement, "display") === "block") {
@@ -33,7 +33,13 @@ export default function modal() {
   modalButtons.forEach(button => {
     button.addEventListener('click', (e) => {
       e.preventDefault();
-      closeAllModals(); // Закрыть все модальные окна перед открытием нового
+      if (sourceInput && button.closest('.card')) { // Добавляем проверки на существование элементов
+        const cardTitle = button.closest('.card').querySelector('.card__title');
+        if (cardTitle) { // Убедимся, что cardTitle существует
+          sourceInput.value = cardTitle.textContent.trim();
+        }
+      }
+      closeAllModals();
       toggleModal(modal, true);
     });
   });

@@ -31,15 +31,17 @@ export default function scroll() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        e.preventDefault();
-        // Плавная прокрутка к элементу
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Добавляем проверку, что targetId не просто "#", а содержит более 1 символа
+      if (targetId !== "#" && targetId.trim().length > 1) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     });
   });
+  
 
   // Прокрутка к элементу после перехода на страницу, если это необходимо
   window.onload = () => {
