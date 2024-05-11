@@ -14,6 +14,13 @@
 }
 
 @font-face {
+	font-family: 'Mulish-ExtraLight';
+	src: url('../fonts/Mulish-ExtraLight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/Mulish-ExtraLight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/Mulish-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
 	font-family: 'Mulish-Light';
 	src: url('../fonts/Mulish-Light.woff2') format('woff2'), /* Super Modern Browsers */
 		url('../fonts/Mulish-Light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
@@ -47,3 +54,4 @@
 		url('../fonts/Mulish-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/Mulish-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
 }
+

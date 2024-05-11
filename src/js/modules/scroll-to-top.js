@@ -6,8 +6,8 @@ export default function scroll() {
 
   // Стилизация кнопки
   scrollButton.style.position = 'fixed';
-  scrollButton.style.bottom = '60px';
-  scrollButton.style.right = '20px';
+  scrollButton.style.bottom = '80px';
+  scrollButton.style.right = '2%';
   scrollButton.style.display = 'none'; // Сначала кнопка скрыта
   scrollButton.style.zIndex = '1000';
   scrollButton.style.cursor = 'pointer';

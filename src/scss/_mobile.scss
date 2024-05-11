@@ -1946,6 +1946,22 @@
   }
 }
 
+@media (max-height: 1000px) {
+  .marketing-modal {
+    .context-ad__advantages {
+      display: none;
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  .marketing-modal {
+    .context-ad__info {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 1040px) {
   .marketing-modal {
     padding: 30px;
@@ -2009,12 +2025,37 @@
 }
 
 @media (max-width: 768px) {
+  .seo-modal {
+    .context-ad__info {
+      display: none;
+    }
+    .context-ad__advantages {
+      display: none;
+    }
+    .context-ad__details {
+      p {
+        width: 48%;
+      }
+    }
+  }
   .marketing-modal {
     padding: 20px;
     width: 96%;
+    max-height: 100vh;
+    .context-ad__details-list {
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      .context-ad__details {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
     .context-container {
       gap: 12px;
-      &__close{
+      &__close {
         top: 0px;
         right: 0px;
       }
@@ -2030,9 +2071,6 @@
         text-align: left;
       }
     }
-    .context-ad__advantages {
-      display: none;
-    }
     .context-ad-links {
       flex-direction: column;
       align-items: center;
@@ -2042,6 +2080,80 @@
         width: 100%;
         text-align: center;
       }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .seo-modal {
+    max-height: 100vh;
+    .context-ad__info {
+      display: none;
+    }
+    .context-ad__advantages {
+      display: none;
+    }
+    .context-ad__details {
+      padding: 10px;
+      p {
+        width: 100%;
+        font-size: 12px;
+      }
+      h3 {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-height: 1000px) {
+  .devel-ad__info {
+    display: none !important;
+  }
+}
+
+@media (max-height: 800px) {
+  .devel-ad__advantages {
+    display: none !important;
+  }
+  .devel-container {
+    gap: 30px;
+  }
+  .develop-modal {
+    padding: 40px 30px 30px;
+    .devel-ad__title {
+      font-size: 28px;
+      span {
+        font-size: 16px;
+      }
+    }
+    .devel-ad-links p {
+      font-size: 16px;
+    }
+    .devel-ad-links a {
+      font-size: 16px;
+      width: 280px;
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .develop-modal {
+    font-size: 14px;
+    .devel-ad__details {
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .devel-ad__price-coast {
+      font-size: 20px;
+      span {
+        font-size: 14px;
+      }
+    }
+    .devel-ad__detail {
+      width: 49%;
+      gap: 6px;
     }
   }
 }

@@ -1467,18 +1467,20 @@
   width: 100%;
 }
 
-.context-modal {
-  opacity: 0;
-  display: none;
-  z-index: 1002;
-}
+// .context-modal,
+// .seo-modal,
+// .target-modal {
+//   opacity: 0;
+//   display: none;
+//   z-index: 1002;
+// }
 
 .marketing-modal {
   position: fixed;
+  display: none;
   top: 50%;
   left: 50%;
   z-index: 1002;
-  background-color: $white;
   transform: translate(-50%, -50%);
   background-color: $white;
   border-radius: 20px;
@@ -1494,7 +1496,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 20px;
     &__close {
       position: absolute;
       display: block;
@@ -1521,13 +1523,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: flex-end;
+    align-items: center;
   }
   .context-ad__why {
     display: flex;
     flex-direction: column;
     gap: 26px;
-    width: 49%;
+    width: 59%;
     h3 {
       font-weight: 600;
       font-size: 1.3em;
@@ -1546,7 +1548,7 @@
     }
   }
   .context-ad__description {
-    width: 48%;
+    width: 40%;
     padding: 30px 20px;
     border-radius: 10px;
     border: 1px solid $orange;
@@ -1595,8 +1597,7 @@
       font-weight: 600;
     }
     a:hover {
-      background-color: #ee9674;
-      transform: scale(0.97);
+      background-color: #38a960;
     }
     p {
       font-size: 20px;
@@ -1613,7 +1614,7 @@
     align-items: center;
     gap: 6px;
     padding: 30px 20px;
-    border: 2px dashed $black;
+    border: 2px dashed #38a960;
     border-radius: 10px;
     width: 100%;
     h3 {
@@ -1634,6 +1635,254 @@
       text-align: center;
     }
   }
+}
+
+.context-ad__details-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  .context-ad__details {
+    width: 32%;
+  }
+}
+
+.develop-modal {
+  position: fixed;
+  // display: none;
+  top: 50%;
+  left: 50%;
+  z-index: 1002;
+  transform: translate(-50%, -50%);
+  background-color: $black;
+  color: $white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  max-width: 1140px;
+  width: 80%;
+  .devel-container {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    &__close {
+      position: absolute;
+      display: block;
+      top: -20px;
+      right: -10px;
+      z-index: 2003;
+      cursor: pointer;
+      background-image: url("../images/icons/header/burger-close.svg");
+      background-repeat: no-repeat;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .devel-ad__title {
+    font-size: 32px;
+    color: $orange;
+    font-family: "Unbounded-SemiBold";
+    line-height: 120%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    span {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+
+  .devel-ad__info {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .devel-ad__why {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 59%;
+    h3 {
+      font-weight: 600;
+      font-size: 1.3em;
+    }
+    .devel-ad__list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-left: 15px;
+    }
+    ul > li {
+      list-style-type: disc;
+      font-family: "Mulish-ExtraLight";
+      color: #f7f7f8c9;
+      span {
+        font-weight: 600;
+        color: $white;
+      }
+    }
+  }
+  .devel-ad__description {
+    width: 40%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid $white;
+    line-height: 120%;
+    p > span {
+      font-weight: 600;
+    }
+  }
+  .devel-ad__advantages {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .devel-advantages__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .devel-advantages-text {
+    font-family: "Mulish-ExtraLight";
+    border: none;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .devel-advantages-descr {
+    display: flex;
+    width: 100%;
+    gap: 4px;
+    align-items: center;
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .devel-ad__detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+    width: 48%;
+    padding: 20px;
+    border: 2px dashed $black;
+    border-radius: 10px;
+    background-color: #fff;
+    color: $black;
+  }
+  .devel-ad-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    a {
+      color: $white;
+      background-color: $orange;
+      text-align: center;
+      border-radius: 10px;
+      width: 440px;
+      padding: 16px 30px;
+      transition: 0.2s ease-in-out;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    a:hover {
+      background-color: #38a960;
+    }
+    p {
+      font-size: 20px;
+      font-family: "Unbounded-Regular";
+      line-height: 130%;
+      span {
+        color: $orange;
+      }
+    }
+  }
+  .devel-ad__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    width: 100%;
+    h3 {
+      font-size: 20px;
+      font-family: "Unbounded-Regular";
+      line-height: 120%;
+      width: 100%;
+      letter-spacing: 0.12em;
+      text-align: center;
+    }
+    p {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 130%;
+      font-family: "Mulish-SemiBold";
+      span {
+        font-family: "Mulish-Light";
+        color: $black;
+      }
+    }
+  }
+  .devel-ad__price-coast {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    font-size: 26px;
+    line-height: 120%;
+    font-family: "Mulish-Medium";
+    font-weight: 600;
+    color: $orange;
+    span {
+      font-size: 16px;
+      color: $black;
+    }
+  }
+  .devel-ad__price-subtitle::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: #616367;
+  }
+}
+
+.quis-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scroll-to-top {
+  cursor: pointer;
+  background-image: url("../images/icons/scroll-to-top.svg");
+  width: 46px;
+  padding: 10px;
+  height: 56px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  filter: drop-shadow(0px 0px 4px rgba(5, 5, 5, 0.2));
 }
 
 @import "mobile";
